@@ -11,4 +11,12 @@ public class Utils {
         }
         return converted;
     }
+
+    public static long[] convertInputToLongArray(List<String> input) {
+        long[] converted = new long[input.size()];
+        for (int i = 0; i < input.size(); i++) {
+            converted[i] = Long.parseLong(input.get(i));
+        }
+        return converted;
+    }
 }
