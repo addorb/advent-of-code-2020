@@ -1,5 +1,6 @@
 package com.addorb.aoc2020;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Utils {
@@ -8,6 +9,14 @@ public class Utils {
         int[] converted = new int[input.size()];
         for (int i = 0; i < input.size(); i++) {
             converted[i] = Integer.parseInt(input.get(i));
+        }
+        return converted;
+    }
+
+    public static List<Integer> convertInputToIntList(List<String> input) {
+        List<Integer> converted = new ArrayList<>(input.size());
+        for (String s : input) {
+            converted.add(Integer.parseInt(s));
         }
         return converted;
     }
