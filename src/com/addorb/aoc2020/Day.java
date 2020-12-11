@@ -7,6 +7,8 @@ import java.util.List;
 
 public abstract class Day {
 
+    private static final boolean MEASURE_PERFORMANCE = true;
+
     public final List<String> input;
 
     public Day(String filename) {
@@ -15,8 +17,18 @@ public abstract class Day {
     }
 
     public final void run() {
-        part1Answer(part1());
-        part2Answer(part2());
+        if (MEASURE_PERFORMANCE) {
+            long start = System.currentTimeMillis();
+            Object part1Result = part1();
+            long p1 = System.currentTimeMillis();
+            Object part2Result = part2();
+            long p2 = System.currentTimeMillis();
+            part1Answer(part1Result + ", took " + (p1-start) + " ms.");
+            part1Answer(part2Result + ", took " + (p2-p1) + " ms.");
+        } else {
+            part1Answer(part1());
+            part2Answer(part2());
+        }
     }
 
     protected abstract Object part1();
