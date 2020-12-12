@@ -24,7 +24,7 @@ public abstract class Day {
             Object part2Result = part2();
             long p2 = System.currentTimeMillis();
             part1Answer(part1Result + ", took " + (p1-start) + " ms.");
-            part1Answer(part2Result + ", took " + (p2-p1) + " ms.");
+            part2Answer(part2Result + ", took " + (p2-p1) + " ms.");
         } else {
             part1Answer(part1());
             part2Answer(part2());
