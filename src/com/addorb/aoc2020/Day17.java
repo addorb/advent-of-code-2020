@@ -48,7 +48,6 @@ public class Day17 extends Day {
                 }
             }
             activeCubes = newGeneration;
-            System.out.println("Generation " + generation +" done");
             generation++;
         }
 
@@ -99,7 +98,6 @@ public class Day17 extends Day {
                 }
             }
             activeHyperCubes = newGeneration;
-            System.out.println("Generation " + generation +" done");
             generation++;
         }
 
