@@ -25,6 +25,7 @@ public class Main {
 //        new Day20().run();
 //        new Day21().run();
 //        new Day22().run();
-        new Day23().run();
+//        new Day23().run();
+        new Day24().run();
     }
 }
