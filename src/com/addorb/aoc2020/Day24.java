@@ -69,7 +69,6 @@ public class Day24 extends Day {
                 }
             }
             blackTiles = newGeneration;
-            System.out.println("Day " + generation + ": " + blackTiles.size());
             generation++;
         }
         return blackTiles.size();
